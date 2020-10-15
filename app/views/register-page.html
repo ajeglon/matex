@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+Register
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+        <div class="nhsuk-back-link">
+            <a class="nhsuk-back-link__link" href="/">
+              <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+              </svg>
+              Go back</a>
+          </div>
+                <h1 class="nhsuk-heading-xl">Register to use the apply for a maternity exemption certificate service</h1>
+                <p>You must have an NHSmail account to use this service.</p>
+                <p>Email <a href="#" target="_blank">nhsbsa.healthcosts@nhs.net</a> and include your:</p>
+                    <ul class="nhsuk-list nhsuk-list--bullet">
+                        <li>name</li>
+                        <li>NMC/GMC number</li>
+                        <li>NHSmail email address</li>
+                        <li>UK telephone number</li>
+                        <li>primary care organisation</li>
+                    </ul>
+                <p>It could take up to 5 working days to create your account. We'll send you an email when your account is ready to use.</p>
+                <details class="nhsuk-details">
+                    <summary class="nhsuk-details__summary">
+                      <span class="nhsuk-details__summary-text">
+                        I'm already registered with this service
+                      </span>
+                    </summary>
+                    <div class="nhsuk-details__text">
+                      <p>Use your NHSmail account details to sign in.</p>
+                      <button class="nhsuk-button" type="submit">
+                        Start
+                      </button>
+                    </div>
+                  </details>
+                  <details class="nhsuk-details">
+                    <summary class="nhsuk-details__summary">
+                      <span class="nhsuk-details__summary-text">
+                        I do not have an NHSmail account
+                      </span>
+                    </summary>
+                    <div class="nhsuk-details__text">
+                      <p>If you're working in a trust or organisation that uses NHSmail, you can contact your Local Administrator or IT Helpdesk to set up an account.</p>
+                      <p>For more information on joining NHSmail visit the NHSmail help page.</p>
+                      <a href="https://portal.nhs.net/Help/joiningnhsmail"><p>https://portal.nhs.net/Help/joiningnhsmail</p></a>
+                    </div>
+                  </details>
+        </div>
+  </div>
+  {% endblock %}
