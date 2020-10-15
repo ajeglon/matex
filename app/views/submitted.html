@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Submitted
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+        <form action="start-page" method="post">
+            <div class="nhsuk-form-group">
+            <div class="blue-box" style=" background-color: #005eb8; color: #ffffff; text-align: center; padding: 20px;">
+                <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-3">Done</h1>
+                <h2 class="nhsuk-heading-l" style="font-weight: normal;">You have completed the application</h2>
+            </div>
+            <div class="nhsuk-inset-text">
+                <span class="nhsuk-u-visually-hidden">Summary: </span>
+                <p><span class="nhsuk-u-font-weight-bold"> Mother's certificate number:</span> 1 000 000 003</p>
+                <p><span class="nhsuk-u-font-weight-bold"> Exemption ends:</span> 09 January 2022</p>
+            </div>
+            <h2 class="nhsuk-heading-l">What happens next?</h2>
+            <p>We'll email these details to the mother. She can start using her exemption straight away</p>
+            <h2 class="nhsuk-heading-l">Ongoing feedback from mothers</h2>
+            <p>If the mother is happy to take part in further research, <a href="#" target="_blank">send us a contact number (opens a new window)</a></p>
+            <button class="nhsuk-button" type="submit">
+                Start a new application
+            </button>
+            </form>
+        </div>
+    </div>
+    {% endblock %}   
